@@ -1,18 +1,18 @@
 {
   "canisters": {
-    "motoko-project-backend": {
-      "main": "src/motoko-project-backend/main.mo",
+    "backend": {
+      "main": "src/backend/main.mo",
       "type": "motoko"
     },
-    "motoko-project-frontend": {
+    "backend": {
       "dependencies": [
-        "motoko-project-backend"
+        "backend"
       ],
       "source": [
-        "src/motoko-project-frontend/dist"
+        "src/backend/dist"
       ],
       "type": "assets",
-      "workspace": "motoko-project-frontend"
+      "workspace": "backend"
     }
   },
   "defaults": {
